@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="관심 있는 분야를 골라 나만의 속도로 배우는 온라인 공부 서재.">
+  <title>공부서재 · 배움의 시작점</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="공부서재 홈"><span class="brand-icon" aria-hidden="true">▥</span> 공부서재<span class="brand-en">STUDIES</span></a>
+    <a class="header-link" href="#library">학습 라이브러리 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="intro-title">
+      <div><p class="eyebrow">A LITTLE LEARNING, EVERY DAY</p><h1 id="intro-title">궁금했던 것들을,<br>하나씩 내 것으로.</h1><p class="intro-copy">관심 있는 분야에서 시작하세요.<br>개념을 배우고, 복습하며 나만의 지식을 쌓는 공간입니다.</p><a class="primary" href="economy/bacis/index.html">경제 공부 시작하기 <span aria-hidden="true">↗</span></a></div>
+      <div class="shelf" aria-hidden="true"><span class="shelf-note">YOUR PERSONAL KNOWLEDGE SHELF</span><div class="books"><div class="book book-light"><span>LEARN</span><b>배움</b><small>01</small></div><div class="book book-blue"><span>ECONOMICS</span><b>경제를 읽는 힘</b><small>02</small></div><div class="book book-slim"><span>EXPLORE</span><b>호기심</b><small>03</small></div></div><div class="shelf-line"></div><p>작은 배움이 쌓여, 더 넓은 세상으로.</p></div>
+    </section>
+    <section id="library" class="library" aria-labelledby="library-title">
+      <div class="section-head"><div><p class="eyebrow">THE LIBRARY</p><h2 id="library-title">오늘은 무엇을 배워볼까요?</h2></div><span class="library-count">1개 학습 가능 · 2개 준비 중</span></div>
+      <div class="tools"><div class="filters" aria-label="카테고리 필터"><button type="button" class="active" data-filter="all" aria-pressed="true">전체</button><button type="button" data-filter="ready" aria-pressed="false">학습 가능</button><button type="button" data-filter="soon" aria-pressed="false">준비 중</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="관심 분야 검색" aria-label="카테고리 검색"></label></div>
+      <div class="category-list">
+        <a class="category category-ready" href="economy/bacis/index.html" data-status="ready" data-search="경제 금융 경제노트 금리 물가 환율 주식"><span class="number">01</span><div class="category-icon economy" aria-hidden="true">↗</div><div class="category-content"><div class="category-title"><h3>경제 · 금융</h3><span class="badge ready">학습 가능</span></div><p>뉴스 속 경제가 이해되는 순간. 돈의 흐름부터 금융의 기본까지.</p><div class="meta">9개 챕터 <span>·</span> 개념 학습 / 플래시카드 / 퀴즈</div></div><span class="category-link">학습 시작 <span aria-hidden="true">↗</span></span></a>
+        <article class="category" data-status="soon" data-search="개발 기술 프로그래밍 웹 컴퓨터"><span class="number">02</span><div class="category-icon" aria-hidden="true">&lt;/&gt;</div><div class="category-content"><div class="category-title"><h3>개발 · 기술</h3><span class="badge">준비 중</span></div><p>기술의 원리를 이해하고, 직접 만드는 즐거움을 배워요.</p><div class="meta">다음 학습 자료를 준비하고 있어요</div></div><span class="coming">COMING SOON</span></article>
+        <article class="category" data-status="soon" data-search="인문 사회 역사 철학"><span class="number">03</span><div class="category-icon humanities" aria-hidden="true">Aa</div><div class="category-content"><div class="category-title"><h3>인문 · 사회</h3><span class="badge">준비 중</span></div><p>사람과 세상을 바라보는 시야를 조금씩 넓혀가요.</p><div class="meta">다음 학습 자료를 준비하고 있어요</div></div><span class="coming">COMING SOON</span></article>
+      </div>
+      <p id="empty" class="empty" hidden>일치하는 카테고리가 없습니다. 다른 검색어를 입력해 보세요.</p>
+      <p id="result-count" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
+    <aside class="note"><span aria-hidden="true">✳</span><p><strong>빠르게보다, 꾸준하게.</strong> 하루에 하나의 개념만 배워도 충분해요.</p><span class="note-label">MAKE ROOM FOR LEARNING</span></aside>
+  </main>
+  <footer class="wrap"><span>공부서재 <span class="footer-sub">나만의 속도로, 매일 조금씩.</span></span><span>배움은 언제나 열려 있습니다.</span></footer>
+</body>
+</html>
